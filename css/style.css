@@ -1,0 +1,140 @@
+:root {
+    --cor-de-fundo: #ffffff;
+    --azul-principal: #202A51;
+    --botao-azul: #167BF7;
+    --cinza-secundario: #C0C0C0;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-principal);
+}
+
+.principal {
+    align-items: center;
+    text-align: center;
+
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+}
+
+
+.container__imagem {
+    margin: 1rem 0 2rem 0;
+    width: 45%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerSlide 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.navbar {
+    width: auto;
+    position: sticky;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+
+/* Menu */
+.menu {
+    display: flex;
+    gap: 40px;
+    margin-left: 150px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--azul-principal);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #b3246c;
+    /* cor de destaque ao passar o mouse */
+}
+
+/* Botões */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn.pink {
+    background-color: #f4436f;
+    color: white;
+}
+
+.btn.pink:hover {
+    background-color: #d83861;
+}
+
+.btn.blue {
+    background-color: #1f1f3a;
+    color: white;
+}
+
+.btn.blue:hover {
+    background-color: #33335a;
+}
+
+
+.secundario {
+    align-items: center;
+    margin-left: 10rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.secundario__imagem {
+    width: 100%;
+}
+
+@keyframes aparecerSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
