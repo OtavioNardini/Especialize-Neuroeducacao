@@ -120,7 +120,7 @@ body {
     margin-left: 10rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
+    height: 116vh;
 }
 
 .secundario__imagem {
@@ -137,4 +137,52 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.terciario {
+    align-items: center;
+    background-color: #F0C209;
+    height: 100vh;
+}
+
+.container__tituloCurso {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.agrupamento-cards {
+    display: grid;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 1.5rem;
+    /* grid-template-columns: 33% 33% 33%; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+    text-align: center;
+    background-color: #e3f2fda7 ;
+    padding: 1em;
+    border-radius: 4.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-1em);
+}
+
+.card__imagem {
+    width: 60%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.container__texto {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--azul-principal);
+    text-align: center;
 }
