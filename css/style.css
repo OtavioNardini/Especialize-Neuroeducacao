@@ -55,7 +55,7 @@ body {
 }
 
 .logo img {
-    height: 40px;
+    height: 45px;
     width: auto;
 }
 
@@ -64,13 +64,13 @@ body {
 .menu {
     display: flex;
     gap: 40px;
-    margin-left: 150px;
 }
 
 .menu a {
     text-decoration: none;
     color: var(--azul-principal);
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
@@ -83,15 +83,15 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
     align-items: center;
 }
 
 .btn {
-    padding: 6px 16px;
+    padding: 10px 12px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: semibold;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -148,7 +148,7 @@ body {
 .container__tituloCurso {
     font-size: 2rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
     gap: 3rem;
 }
 
@@ -160,9 +160,10 @@ body {
     /* grid-template-columns: 33% 33% 33%; */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
 .card {
     text-align: center;
-    background-color: #e3f2fda7 ;
+    background-color: #e3f2fda7;
     padding: 1em;
     border-radius: 4.5em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -185,4 +186,80 @@ body {
     margin-bottom: 2rem;
     color: var(--azul-principal);
     text-align: center;
+}
+
+
+.quaternario {
+    align-items: center;
+    background-color: #202A51;
+    height: 100vh;
+}
+
+.container__tituloDepimentos {
+    color: var(--cor-de-fundo);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.video__principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.agrupamento-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    grid-template-columns: 33% 33% 33%;
+   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+}
+
+.instrutores{
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.img-perfilInstrutores {
+    width: 10rem;
+    border-radius: 20%;
+}
+
+.agrupamento-cardsInstrutores {
+    display: grid;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    /* grid-template-columns: 20% 20% 20% 20% 20%; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.agrupamento-cards1 {
+    display: grid;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.cardInstrutores {
+    background-color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.cardInstrutores:hover {
+    transform: translateY(-1em);
+}
+
+.container__tituloInstrutores {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 3rem;
 }
