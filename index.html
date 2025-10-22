@@ -20,13 +20,15 @@
         <div class="logo">
             <img src="img/LOGO PRINCIPAL.png" alt="Especialize Neuroeducação">
         </div>
-        <nav class="menu">
+        <div class="menu" id="menu">
             <a href="#sobre">Sobre</a>
             <a href="#cursos">Cursos</a>
             <a href="#depoimentos">Depoimentos</a>
             <a href="#instrutores">Instrutores</a>
             <a href="#contatos">Contatos</a>
-        </nav>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
         <div class="buttons">
             <a href="#empresa" class="btn pink">Quero Capacitar minha empresa</a>
@@ -69,26 +71,26 @@
             <h1 class="container__tituloDepimentos">Depoimentos</h1>
         </div>
         <div class="video__principal">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XFkzRNyygfk?si=yQXU1Hlm9APs3Z-k"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vF19q-opXdI?si=viVoXhZxTvo9znmA"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="agrupamento-videos">
             <div class="video__secundario">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/XFkzRNyygfk?si=yQXU1Hlm9APs3Z-k"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vF19q-opXdI?si=viVoXhZxTvo9znmA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="video__secundario">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/XFkzRNyygfk?si=yQXU1Hlm9APs3Z-k"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vF19q-opXdI?si=viVoXhZxTvo9znmA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="video__secundario">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/XFkzRNyygfk?si=yQXU1Hlm9APs3Z-k"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vF19q-opXdI?si=viVoXhZxTvo9znmA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -205,6 +207,15 @@
             </div>
         </div>
     </section>
+
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.querySelector("#sobre").scrollIntoView({ behavior: "smooth" });
+            }, 100); // espera 1 segundo
+        };
+    </script>
+
 </body>
 
 </html>
