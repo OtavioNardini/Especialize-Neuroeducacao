@@ -403,3 +403,52 @@ body {
   }
 }
 
+/* ===== ESTILO DA SEÇÃO DE CONTATOS ===== */
+#contatos {
+    background-color: #f2f6ff; /* cor suave de fundo */
+    text-align: center;
+    padding: 80px 20px;
+    border-top: 3px solid #c9d6ff; /* leve destaque superior */
+}
+
+#contatos .container__tituloContatos {
+    font-size: 2em;
+    color: #002c6c;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#contatos .container__texto {
+    color: #333;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+#contatos a {
+    color: #004aad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contatos a:hover {
+    text-decoration: underline;
+}
+
+/* ===== ESTILO DO FOOTER ===== */
+footer {
+    background-color: #eef2ff; /* mesma cor da seção de vídeos */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9em;
+    color: #333;
+    border-top: 2px solid #c9d6ff;
+}
+
+footer .footer__texto {
+    margin: 0;
+    color: #002c6c;
+    font-weight: 500;
+}
+
+

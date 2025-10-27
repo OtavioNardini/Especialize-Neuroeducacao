@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Especialize</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/LOGO CIRCULAR.png">
 </head>
 
 <body>
@@ -14,6 +15,14 @@
             <img src="img/LOGO CIRCULAR.png" alt="" class="container__imagem">
         </div>
     </header>
+
+    <script>
+        window.onload = function () {
+            setTimeout(() => {
+                document.querySelector("#sobre").scrollIntoView({ behavior: "smooth" });
+            }, 100); // espera 1 segundo
+        };
+    </script>
 
     <section class="navbar">
 
@@ -25,7 +34,7 @@
             <a href="#cursos">Cursos</a>
             <a href="#depoimentos">Depoimentos</a>
             <a href="#instrutores">Instrutores</a>
-            <!-- <a href="#contatos">Contatos</a> -->
+            <a href="#contatos">Contatos</a>
         </div>
 
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -208,14 +217,35 @@
         </div>
     </section>
 
-    <script>
-        window.onload = function () {
-            setTimeout(() => {
-                document.querySelector("#sobre").scrollIntoView({ behavior: "smooth" });
-            }, 100); // espera 1 segundo
-        };
-    </script>
+<section id="contatos" class="container instrutores">
+    <div class="container__descricao">
+        <h1 class="container__tituloContatos">Contatos</h1>
+        <p class="container__texto">
+            Entre em contato conosco para mais informações sobre nossos cursos e serviços.
+        </p>
+        <p class="container__texto">
+            Email: <a href="mailto:contato@neuroeducacao.com">contato@neuroeducacao.com</a>
+        </p>
+
+        <div class="redes-sociais">
+            <a href="https://www.youtube.com" target="_blank" class="social-link">
+                <img src="img/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://wa.me/5599999999999" target="_blank" class="social-link">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</section>
+
 
 </body>
+
+<footer>
+    <p class="footer__texto">© 2025 Especialize Neuroeducação. Todos os direitos reservados.</p>
+</footer>
 
 </html>
