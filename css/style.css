@@ -200,7 +200,6 @@ body {
     background-color: #202A51;
     min-height: 100vh;
     height: auto;
-
 }
 
 .container__tituloDepimentos {
@@ -211,21 +210,6 @@ body {
     gap: 3rem;
 }
 
-.video__principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-.agrupamento-videos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    grid-template-columns: 33% 33% 33%;
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-}
 
 .instrutores {
     align-items: center;
@@ -242,6 +226,7 @@ body {
   height: auto;
   aspect-ratio: 16 / 9;
   border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.485);
 }
 
 /* Garante que o agrupamento de vídeos se comporte bem */
@@ -437,7 +422,7 @@ body {
 
 /* ===== ESTILO DO FOOTER ===== */
 footer {
-    background-color: #eef2ff; /* mesma cor da seção de vídeos */
+   background-color: #202A51;
     text-align: center;
     padding: 20px 10px;
     font-size: 0.9em;
@@ -447,7 +432,7 @@ footer {
 
 footer .footer__texto {
     margin: 0;
-    color: #002c6c;
+    color: #fff;
     font-weight: 500;
 }
 
