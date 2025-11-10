@@ -19,12 +19,11 @@ body {
 .principal {
     align-items: center;
     text-align: center;
-
 }
 
 .container {
     display: grid;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     height: auto;
 
 }
@@ -118,13 +117,16 @@ body {
 
 
 .secundario {
+   background-image: url(../img/CarolFundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
+    text-align: center;
     margin-left: 10rem;
     display: grid;
     grid-template-columns: 50% 50%;
     min-height: 116vh;
     height: auto;
-
 }
 
 .secundario__imagem {
